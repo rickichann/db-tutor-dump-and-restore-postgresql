@@ -11,7 +11,7 @@ Run the following command:
 sudo apt update && sudo apt install -y postgresql-client-17
 ```
 
-## 2. Access PostgreSQL Database
+## 2. Access PostgreSQL Database on EC2 B
 Once the installation is complete, use the following command to access the database:
 ```sh
 PGPASSWORD="<passwoord>" psql -h <private-ip> -U <username> -d <database_name>
@@ -24,13 +24,13 @@ If you encounter any errors, please share the error message for further assistan
 ## **Note:**
 Ensure that the PostgreSQL Client version used for dumping and restoring is the same to avoid compatibility issues.
 
-## 1. Dump PostgreSQL Database
+## 1. Dump PostgreSQL Database on EC2 A
 Run the following command to create a database dump:
 ```sh
 sudo PGPASSWORD="<password>" pg_dumpall -h 10.0.147.10 -U <username> -f sl_dump.sql
 ```
 
-## 2. Restore PostgreSQL Database
+## 2. Restore PostgreSQL Database on EC2 A
 Steps to restore the database on EC2 Apps:
 
 ### a. Install PostgreSQL on EC2 Apps (If not already installed)
@@ -43,7 +43,7 @@ sudo chown postgres:postgres /var/lib/postgresql/sl_dump.sql
 sudo chmod 644 /var/lib/postgresql/sl_dump.sql
 ```
 
-### c. Run the restore process
+### c. Run the restore process on EC2 A
 ```sh
 sudo PGPASSWORD="<password>" psql -U <username> -f /var/lib/postgresql/sl_dump.sql
 ```
