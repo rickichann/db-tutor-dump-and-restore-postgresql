@@ -31,9 +31,7 @@ sudo PGPASSWORD="<password>" pg_dumpall -h 10.0.147.10 -U <username> -f sl_dump.
 Steps to restore the database on EC2 Apps:
 
 ### a. Install PostgreSQL on EC2 Apps (If not already installed)
-```sh
-sudo apt update && sudo apt install -y postgresql
-```
+https://github.com/rickichann/db-tutor-installing-postgresql-on-ubuntu 
 
 ### b. Move the dump file to the PostgreSQL directory
 ```sh
