@@ -1,4 +1,7 @@
-# Connecting EC2 A to EC2 Databases
+# Dump and Restore PostgreSQL on EC2
+
+![image](https://github.com/user-attachments/assets/d405bd15-41a2-4df9-9282-8cc0b44b6a49)
+
 
 ## 1. Install PostgreSQL Client on EC2 A
 To access the PostgreSQL database from EC2 Apps, you need to install the PostgreSQL Client.
