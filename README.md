@@ -1,4 +1,4 @@
-# Connecting EC2 Applications to EC2 Databases
+# Connecting EC2 A to EC2 Databases
 
 ## 1. Install PostgreSQL Client on EC2 A
 To access the PostgreSQL database from EC2 Apps, you need to install the PostgreSQL Client.
