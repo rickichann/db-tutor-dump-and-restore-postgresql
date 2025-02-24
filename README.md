@@ -4,7 +4,7 @@
 
 Things to consider:
 
-1. Network Connectivity
+1. Network Connectivity (VPC, Subnet, SG, and etc) 
 2. The PostgreSQL client version on EC2 A and EC2 B must be the same
 
 
@@ -17,7 +17,7 @@ Run the following command:
 sudo apt update && sudo apt install -y postgresql-client-17
 ```
 
-## 2. Access PostgreSQL Database on EC2 B
+## 2. Access PostgreSQL Database on EC2 B (Connectivity Check)
 Once the installation is complete, use the following command to access the database:
 ```sh
 PGPASSWORD="<passwoord>" psql -h <private-ip> -U <username> -d <database_name>
